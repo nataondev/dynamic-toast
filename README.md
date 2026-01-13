@@ -238,8 +238,10 @@ Kemudian buka browser di `http://localhost:8000`
 - Firefox 87+
 - Safari 14+
 - Opera 74+
-
+  
+```
 Library menggunakan ResizeObserver, CSS Custom Properties, dan modern JavaScript features.
+
 dynamic-toast/
 ├── index.html              # File demo
 ├── lib/
@@ -289,15 +291,3 @@ MIT License - Bebas digunakan untuk proyek pribadi maupun komersial.
 
 Kontribusi dan pull request sangat diterima. Silakan buat issue untuk bug report atau feature request.
 
----
-
-Dibuat dengan Vanilla JavaScript + CSS
-MIT License - Bebas digunakan untuk proyek pribadi maupun komersial.
-
-## Bug Reports
-
-Jika menemukan bug atau memiliki saran, silakan buat issue di repository ini.
-
----
-
-Dibuat menggunakan Vanilla JavaScript
