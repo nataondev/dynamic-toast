@@ -1,0 +1,17 @@
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "workflow ok"
+          echo "repo: $GITHUB_REPOSITORY"
+          echo "ref: $GITHUB_REF"

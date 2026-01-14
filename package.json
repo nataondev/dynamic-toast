@@ -1,0 +1,19 @@
+{
+  "name": "dynamic-toast",
+  "version": "0.1.0",
+  "description": "Library JavaScript sederhana untuk notifikasi bergaya Dynamic Island.",
+  "main": "lib/dynatoast.js",
+  "style": "lib/dynatoast.css",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "toast",
+    "notification",
+    "dynamic-island",
+    "javascript",
+    "css"
+  ],
+  "license": "MIT"
+}
