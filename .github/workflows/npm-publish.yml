@@ -21,6 +21,11 @@ jobs:
           node-version: 20
           registry-url: "https://registry.npmjs.org"
 
+      - name: Verify npm authentication
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+
       - name: Publish
         run: npm publish --access public
         env:
