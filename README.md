@@ -18,9 +18,31 @@ Library JavaScript sederhana untuk membuat notifikasi bergaya Dynamic Island den
 - Browser modern dengan dukungan ES6 (Chrome, Firefox, Safari, Edge)
 - Tidak ada dependencies eksternal yang diperlukan
 
+## Instalasi via npm
+
+```bash
+npm install dynamic-toast
+# atau
+yarn add dynamic-toast
+# atau
+pnpm add dynamic-toast
+```
+
+### Import (Bundler)
+
+```javascript
+import DynamicIsland from "dynamic-toast";
+
+// CSS default sudah di-inject oleh JS.
+// Import file ini jika ingin override lewat stylesheet.
+import "dynamic-toast/lib/dynatoast.css";
+```
+
 ## Cara Penggunaan
 
-### 1. Include Library
+Untuk penggunaan via bundler/npm, lihat bagian "Instalasi via npm".
+
+### 1. Include Library (tanpa bundler)
 
 Tambahkan CSS dan JavaScript ke dalam HTML Anda:
 
@@ -213,7 +235,11 @@ Library ini menggunakan CSS yang dapat di-override dengan mudah. Anda dapat:
 ```css
 /* Ubah warna success menjadi hijau lebih terang */
 .di-icon-success {
-   Demo
+  background-color: #22c55e;
+}
+```
+
+## Demo
 
 Buka `index.html` di browser untuk melihat demo interaktif:
 
@@ -238,10 +264,12 @@ Kemudian buka browser di `http://localhost:8000`
 - Firefox 87+
 - Safari 14+
 - Opera 74+
-  
-```
+
 Library menggunakan ResizeObserver, CSS Custom Properties, dan modern JavaScript features.
 
+Struktur folder:
+
+```
 dynamic-toast/
 ├── index.html              # File demo
 ├── lib/
@@ -290,4 +318,3 @@ MIT License - Bebas digunakan untuk proyek pribadi maupun komersial.
 ## Kontributor
 
 Kontribusi dan pull request sangat diterima. Silakan buat issue untuk bug report atau feature request.
-
