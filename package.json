@@ -1,6 +1,6 @@
 {
   "name": "dynamic-toast",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Library JavaScript sederhana untuk notifikasi bergaya Dynamic Island.",
   "main": "lib/dynatoast.js",
   "style": "lib/dynatoast.css",
