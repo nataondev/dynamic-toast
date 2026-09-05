@@ -73,13 +73,10 @@
   cursor: default;
 }
 
+/* Float Animation */
 .di-base.idle {
   width: 124px;
   height: 38px;
-}
-
-/* Float Animation */
-.di-base.idle {
   animation: di-float 3s ease-in-out infinite;
 }
 
@@ -91,21 +88,6 @@
   50% {
     transform: translateY(-5px);
   }
-}
-
-/* Pulse Animation */
-@keyframes di-pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.04);
-  }
-}
-
-.di-pulse {
-  animation: di-pulse 0.3s ease-out;
 }
 
 /* Progress Indicator */
@@ -138,6 +120,7 @@
   display: none;
   width: 100%;
   z-index: 10;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
 }
@@ -164,13 +147,13 @@
 /* Close Button */
 .di-close-btn {
   position: relative;
+  margin-left: auto;
   width: 36px;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
   z-index: 20;
 }
 
@@ -233,14 +216,7 @@
   }
 }
 
-/* Flexbox utilities for content layout */
-.di-content > div {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-}
-
+/* Content layout */
 #di-icon {
   flex-shrink: 0;
 }
@@ -253,20 +229,14 @@
 /* Icon background colors */
 .di-icon-success {
   background-color: #10b981;
-  padding: 8px;
-  border-radius: 16px;
 }
 
 .di-icon-error {
   background-color: #f43f5e;
-  padding: 8px;
-  border-radius: 16px;
 }
 
 .di-icon-info {
   background-color: #2563eb;
-  padding: 8px;
-  border-radius: 16px;
 }
 
 /* Text styling */
@@ -289,15 +259,10 @@
 }
 
 /* Text container */
-.di-content > div > div:nth-child(2) {
+.di-text {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
-
-/* Close button container */
-.di-content > div > div:last-child {
-  margin-left: auto;
 }
 
 /* SVG icon styles */
